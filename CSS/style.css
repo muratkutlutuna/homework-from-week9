@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10%;
+}
+
+.navBar, .navSideBar, aside, div.main, footer {
+    border: 1px solid black;
+    margin: 10px;
+    position: relative ;
+} 
+
+.navBar ul li {
+    display: inline-block;
+    align-self: flex-start;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    margin: 1px 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: grey;
+    position: static;
+}
+
+nav.navBar>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav.navBar>div>img {
+    width: 70px;
+    height: 30px;
+}
+
+.middle {
+    display: flex;
+    flex-flow: row;
+}
+
+nav.navSideBar img {
+    width: 200px;
+    height: 50px;
+}
+
+nav.navSideBar {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    justify-self: left;
+    width: 200px;
+    height: 400px;
+    top: 15px;
+}
+
+nav.navSideBar a {
+    margin-top: 20px;
+    align-self: center;
+}
+
+aside {
+    display: flex;
+    order: 0;
+    flex-direction: column;
+    justify-content: left;
+    width: 200px;
+    height: 300px;
+    padding-top: 5px;
+    top: 9px;
+}
+
+aside h3, 
+aside form,
+aside form [type="radio"]:checked,
+aside form [type="radio"]:not(:checked), 
+aside form [type="submit"]{
+    align-self: center;
+}
+
+div.main {
+    display: flex;
+    justify-self: right;
+    height: 710px;
+    position: relative;
+    top: 16px;
+    overflow: scroll;
+}
+
+section{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    height: 1200px;
+    position: relative;
+}
+
+div.main section img.topPic {
+    margin: 5px;
+    width: 226px;
+    height: 136px;
+    object-fit: contain;
+}
+
+div.main section img.bottomPic {
+    margin: 5px;
+    width: 227px;
+    height: 102px;
+    object-fit: fill;
+}
+
+div.main::-webkit-scrollbar{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+div.main::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+}
